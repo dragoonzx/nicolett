@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Ателье по пошиву и ремонту одежды в Тюмени"
+    />
+    <meta name="author" content="Shcherbak Maxim" />
+    <title>Ателье Nicoletta</title>
+
+    <!-- Bootstrap core CSS THEMED
+    -->
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="carousel.css" />
+
+    <!--This site CSS style
+    -->
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <script src="anime.min.js"></script>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <svg style="height:48px;width:264px">
+          <defs>
+            <style type="text/css">
+              @font-face {
+                font-family: Vkusno;
+                src: url('15581.otf');
+              }
+            </style>
+          </defs>
+          <a class="navbar-brand" href="/">
+            <text
+              class="path"
+              x="0"
+              y="30"
+              stroke="#ff7f50"
+              fill="#ff7f50"
+              stroke-width="0.5"
+              style="font-family: 'Vkusno';font-size:30px"
+            >
+              Ателье Николетта
+            </text>
+          </a>
+        </svg>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Главная <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Об ателье</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="map.html">Адрес и контакты</a>
+            </li>
+          </ul>
+          <img class="ezhik" onclick="ezhikHandler()" src="1x/Ресурс 5-8.png" />
+          <p style="font-size:13px;margin-bottom:0px">
+            Тюмень, улица Республики 94к1<br />+7 (904) 470 36 61
+          </p>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <!-- <li data-target="#myCarousel" data-slide-to="1"></li> -->
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="background-image: url(slider-yellow0.jpg);background-size:cover;"
+          >
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Пошив одежды в Тюмени</h1>
+                <p>
+                  Сделайте свой образ уникальным и неповторимым благодаря пошиву
+                  на заказ. Выберите или придумайте модель, ткани и дизайн, а мы
+                  снимем с вас мерки и выполним заказ.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#" role="button"
+                    >Узнать больше</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div
+            class="carousel-item"
+            style="background-image: url(/slider-pen.jpg);background-size:cover;background-position: center;"
+          >
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Ремонт одежды в Тюмени</h1>
+                <p>
+                  Мы все любим и ценим купленную нами одежду, но иногда с ней
+                  случается «непоправимое». Наше ателье окажет услуги по ремонту
+                  одежды и подарят новую жизнь вашей любимой одежде.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#" role="button"
+                    >Узнать больше</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div> -->
+          <div
+            class="carousel-item"
+            style="background-image: url(slider-yellow1.jpg);background-size:cover;"
+          >
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>Машинная вышивка в Тюмени</h1>
+                <p>
+                  Вышивка любых рисунков, логотипов, графики и текста на ваших
+                  вещах.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#" role="button"
+                    >Посмотреть примеры</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#myCarousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#myCarousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!-- Marketing messaging and featurettes
+  ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <!-- <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+              role="img"
+              aria-label="Placeholder: 140x140"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777" />
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            </svg> -->
+            <img src="1.2x/Ресурс 3.png" />
+            <h2>
+              Аккуратность
+            </h2>
+            <p>
+              Опыт работы более 10 лет гарантирует высокое качество работы и
+              своевременное выполнение заказов
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#" role="button"
+                >Портфолио &raquo;</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <!-- <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+              role="img"
+              aria-label="Placeholder: 140x140"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777" />
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            </svg> -->
+            <img src="1.4x/Ресурс 2.png" />
+            <h2>
+              Подход
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28px"
+                height="28px"
+                viewBox="0 0 28 28"
+              >
+                <path
+                  d="M14 19h-4c-.276 0-.5.224-.5.5s.224.5.5.5h4c.276 0 .5-.224.5-.5s-.224-.5-.5-.5zm0 2h-4c-.276 0-.5.224-.5.5s.224.5.5.5h4c.276 0 .5-.224.5-.5s-.224-.5-.5-.5zm.25 2h-4.5l1.188.782c.154.138.38.218.615.218h.895c.234 0 .461-.08.615-.218l1.187-.782zm3.75-13.799c0 3.569-3.214 5.983-3.214 8.799h-1.989c-.003-1.858.87-3.389 1.721-4.867.761-1.325 1.482-2.577 1.482-3.932 0-2.592-2.075-3.772-4.003-3.772-1.925 0-3.997 1.18-3.997 3.772 0 1.355.721 2.607 1.482 3.932.851 1.478 1.725 3.009 1.72 4.867h-1.988c0-2.816-3.214-5.23-3.214-8.799 0-3.723 2.998-5.772 5.997-5.772 3.001 0 6.003 2.051 6.003 5.772zm4-.691v1.372h-2.538c.02-.223.038-.448.038-.681 0-.237-.017-.464-.035-.69h2.535zm-10.648-6.553v-1.957h1.371v1.964c-.242-.022-.484-.035-.726-.035-.215 0-.43.01-.645.028zm-3.743 1.294l-1.04-1.94 1.208-.648 1.037 1.933c-.418.181-.822.401-1.205.655zm10.586 1.735l1.942-1.394.799 1.115-2.054 1.473c-.191-.43-.423-.827-.687-1.194zm-3.01-2.389l1.038-1.934 1.208.648-1.041 1.941c-.382-.254-.786-.473-1.205-.655zm-10.068 3.583l-2.054-1.472.799-1.115 1.942 1.393c-.264.366-.495.763-.687 1.194zm13.707 6.223l2.354.954-.514 1.271-2.425-.982c.21-.397.408-.812.585-1.243zm-13.108 1.155l-2.356 1.06-.562-1.251 2.34-1.052c.173.433.371.845.578 1.243zm-1.178-3.676h-2.538v-1.372h2.535c-.018.226-.035.454-.035.691 0 .233.018.458.038.681z"
+                />
+              </svg>
+            </h2>
+            <p>
+              Одежда — как визитная карточка, только она может рассказать о Вас
+              гораздо больше.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#" role="button"
+                >Об ателье &raquo;</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <!-- <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+              role="img"
+              aria-label="Placeholder: 140x140"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777" />
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            </svg> -->
+            <img src="1.6x/Ресурс 1.png" />
+            <h2>Гарантия</h2>
+            <p>
+              На все вещи и ремонты действует гарантия. Подшив вещей точно под
+              вас.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#" role="button"
+                >Услуги &raquo;</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">
+              Сначала — мерки<br />
+              <span class="text-muted" style="font-size:30px"
+                >Новая вещь должна идеально подходить</span
+              >
+            </h2>
+            <p class="lead">
+              Снимаем мерки и приходим к общему пониманию, какой должна быть
+              вещь. Смотрим и выбираем ткани, фурнитуру
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img class="thumbnail" src="3x/Ресурс 14.png" alt="image" />
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">
+              Кройка и планирование<br />
+              <span class="text-muted" style="font-size:30px"
+                >Черчение и геометрия</span
+              >
+            </h2>
+            <p class="lead">
+              Моделирование одежды на основе мерок
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="thumbnail" src="3x/Ресурс 1.png" />
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">
+              Работа и вышивка<br />
+              <span class="text-muted" style="font-size:30px"
+                >Здесь происходит магия</span
+              >
+            </h2>
+            <p class="lead">
+              Всё готово к самому главному — пошиву
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img class="thumbnail" src="3x/Ресурс 3.png" />
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <!-- /END THE FEATURETTES -->
+      </div>
+      <!-- /.container -->
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Наверх ↑</a></p>
+        <p>
+          &copy; 2018-2019 Ателье Nicoletta &middot;
+          <a href="#">Публичная оферта</a> &middot; <a href="#">Правила</a>
+        </p>
+      </footer>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="simpleParallax.js"></script>
+    <script src="mainScript.js"></script>
+  </body>
+</html>

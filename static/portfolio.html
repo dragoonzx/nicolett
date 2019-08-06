@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Ателье по пошиву и ремонту одежды в Тюмени"
+    />
+    <meta name="author" content="Shcherbak Maxim" />
+    <title>Ателье Nicoletta</title>
+
+    <!-- Bootstrap core CSS THEMED
+    -->
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="carousel.css" />
+
+    <!--This site CSS style
+    -->
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <script src="anime.min.js"></script>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <svg style="height:48px;width:264px">
+          <defs>
+            <style type="text/css">
+              @font-face {
+                font-family: Vkusno;
+                src: url('15581.otf');
+              }
+            </style>
+          </defs>
+          <a class="navbar-brand" href="#">
+            <text
+              class="path"
+              x="0"
+              y="30"
+              stroke="#ff7f50"
+              fill="#ff7f50"
+              stroke-width="0.5"
+              style="font-family: 'Vkusno';font-size:30px"
+            >
+              Ателье Николетта
+            </text>
+          </a>
+        </svg>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="/">Главная </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Услуги</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Портфолио <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Об ателье</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="map.html">Адрес и контакты</a>
+            </li>
+          </ul>
+          <img class="ezhik" onclick="ezhikHandler()" src="1x/Ресурс 5-8.png" />
+          <p style="font-size:13px;margin-bottom:0px">
+            Тюмень, улица Республики 94к1<br />+7 (904) 470 36 61
+          </p>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container mapper__portfolio">
+        <h1 style="padding-bottom:50px;padding-left:15px;font-weight: bold">
+          Мои работы:
+        </h1>
+        <a
+          onclick="portfolioHandler('portfolio__poshiv')"
+          class="btn btn-lg btn-primary"
+          href="#"
+          role="button"
+          style="margin-left:15px;"
+          >Платья</a
+        >
+
+        <a
+          onclick="portfolioHandler('portfolio__costums')"
+          class="btn btn-lg btn-primary"
+          href="#"
+          role="button"
+          >Костюмы</a
+        >
+
+        <a
+          onclick="portfolioHandler('portfolio__machine')"
+          class="btn btn-lg btn-primary"
+          href="#"
+          role="button"
+          >Машинная вышивка</a
+        >
+        <div id="portfolio__poshiv" style="padding-top:50px">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="col-lg">
+                <img
+                  style="height:100%;width:100%"
+                  src="https://pp.userapi.com/c851224/v851224723/80606/u7pOGcARwes.jpg"
+                />
+              </div>
+              <div class="col-lg">
+                Платье "Венеция"<br />
+                Размер: 42-44
+                <br />
+                Цена: 11 000 руб. <br />
+                Есть в наличии: Да
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="col-lg">
+                <img
+                  style="height:100%;width:100%"
+                  src="https://pp.userapi.com/c845524/v845524354/175596/1YLNpMRNR7E.jpg"
+                />
+              </div>
+              <div class="col-lg">
+                Платье свадебное<br />
+                Размер: 42, Обхват талии: 66
+                <br />
+                Цена: 12 000 руб. <br />
+                Есть в наличии: Да
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="col-lg">
+                <img
+                  style="height:100%;width:100%"
+                  src="https://pp.userapi.com/c845218/v845218178/172694/yw2nrVH8X5k.jpg"
+                />
+              </div>
+              <div class="col-lg">
+                Платье на заказ
+                <br />
+                Размер: 42-44
+                <br />
+                Цена: договорная <br />
+                Есть в наличии: Нет
+              </div>
+            </div>
+          </div>
+          <div class="row" style="padding-top:50px;">
+            <div class="col-lg-4">
+              <div class="col-lg">
+                <img
+                  style="height:100%;width:100%"
+                  src="https://sun9-11.userapi.com/c845417/v845417375/17a7f0/C2pkKBSQ5ho.jpg"
+                />
+              </div>
+              <div class="col-lg">
+                Офисный сарафан<br />
+                Размер: 42-44
+                <br />
+                Цена: от 2 000 руб. <br />
+                Есть в наличии: Да
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="col-lg">
+                <img
+                  style="height:100%;width:100%"
+                  src="https://pp.userapi.com/c846520/v846520755/1741df/L3bWd-FRAHM.jpg"
+                />
+              </div>
+              <div class="col-lg">
+                Вечернее платье<br />
+                Размер: 42-44
+                <br />
+                Цена: договорная <br />
+                Есть в наличии: Нет
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="col-lg">
+                <img
+                  style="height:100%;width:100%"
+                  src="https://scontent-arn2-1.cdninstagram.com/vp/100bab5174b9fcf9570305221f59dadf/5DDA595A/t51.2885-15/e35/57487963_135518734237174_6877877695713359114_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com"
+                />
+              </div>
+              <div class="col-lg">
+                Жакет<br />
+                Размер: 42-44
+                <br />
+                Цена: договорная <br />
+                Есть в наличии: Нет
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="portfolio__costums" style="display: none">COSTUMERERRS</div>
+        <div id="portfolio__machine" style="display: none">MACHEERE</div>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="simpleParallax.js"></script>
+    <script src="ezhikScript.js"></script>
+    <script src="portfolioScript.js"></script>
+  </body>
+</html>

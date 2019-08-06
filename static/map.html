@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Ателье по пошиву и ремонту одежды в Тюмени"
+    />
+    <meta name="author" content="Shcherbak Maxim" />
+    <title>Ателье Nicoletta</title>
+
+    <!-- Bootstrap core CSS THEMED
+    -->
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="carousel.css" />
+
+    <!--This site CSS style
+    -->
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <script src="anime.min.js"></script>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <svg style="height:48px;width:264px">
+          <defs>
+            <style type="text/css">
+              @font-face {
+                font-family: Vkusno;
+                src: url('15581.otf');
+              }
+            </style>
+          </defs>
+          <a class="navbar-brand" href="#">
+            <text
+              class="path"
+              x="0"
+              y="30"
+              stroke="#ff7f50"
+              fill="#ff7f50"
+              stroke-width="0.5"
+              style="font-family: 'Vkusno';font-size:30px"
+            >
+              Ателье Николетта
+            </text>
+          </a>
+        </svg>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="/">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Об ателье</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="map.html"
+                >Адрес и контакты<span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+          <img class="ezhik" onclick="ezhikHandler()" src="1x/Ресурс 5-8.png" />
+          <p style="font-size:13px;margin-bottom:0px">
+            Тюмень, улица Республики 94к1<br />+7 (904) 470 36 61
+          </p>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container mapper">
+        <div class="row">
+          <div class="col-lg-8 map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/-/CGe7iKpw"
+              width="100%"
+              height="400"
+              frameborder="1"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+          <div class="col-lg-4">
+            <h3>Мы находимся по адресу:</h3>
+            <h5>г. Тюмень, улица Республики 94к1, офис 311</h5>
+            <p>Связаться с нами можно через:</p>
+            <h4>
+              Вконтакте: <a href="https://vk.com/nicoletta_tyumen">жмяк!</a>
+            </h4>
+            <h4>
+              Инстаграм:
+              <a href="https://www.instagram.com/nicoletta_tyumen/">туц!</a>
+            </h4>
+            <h4>
+              Телефон для связи:<br />
+              8 (904) 470 36 61 (Юлия)
+            </h4>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="ezhikScript.js"></script>
+  </body>
+</html>
